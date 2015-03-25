@@ -40,6 +40,11 @@ a:hover {
  * Navigator menu
  **************************/
 
+/* give the logo a thing here*/
+#logo a::before {
+	content: "THE LOGO ______ ";
+}
+
 #mainmenu ul {
 	padding: 1rem;
 }
