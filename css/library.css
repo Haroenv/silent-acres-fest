@@ -1,0 +1,15 @@
+/**
+ * Generic styles
+ *
+ * @author Haroen Viaene <haroen.viaene@student.odisee.be>
+ *
+ */
+
+/* ===========================================
+	Regular classes
+============================================== */
+
+.structural {
+	position: absolute;
+	left: -9999px;
+}

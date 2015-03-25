@@ -1,0 +1,36 @@
+/**
+ * General stylesheet for SAF
+ *
+ * @author Haroen Viaene <haroen.viaene@student.odisee.be>
+ */
+
+/* =============================================
+ * GENERAL
+ =============================================== */
+
+html {
+	font-size: 0.625em;  /* set 1 rem = 16px * 0.625 = 10px */
+}
+
+* {
+	margin: 0; /* wipe out browser differences for default values */
+	padding: 0; /* wipe out browser differences for default values  */
+	-webkit-box-sizing: border-box; /* use border-box box model everywhere */
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #222;
+}
+
+.wrapper {
+	min-width: 48rem;
+	max-width: 96rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
