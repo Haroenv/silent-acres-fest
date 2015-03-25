@@ -1,29 +1,22 @@
 /**
-* General stylesheet for SAF
-*
-* @author Haroen Viaene <haroen.viaene@student.odisee.be>
-*/
+ * General stylesheet for SAF
+ *
+ * @author		Haroen Viaene <haroen.viaene@student.odisee.be>
+ *
+ * @author		Bram(us) Van Damme <bramus.vandamme@kahosl.be>
+ * @author		Rogier van der Linde <rogier.vanderlinde@kahosl.be>
+ */
 
 /***************************
-* General
-***************************/
+ * General
+ **************************/
 
 html {
 	font-size: 0.625em;  /* set 1 rem = 16px * 0.625 = 10px */
 }
 
-* {
-	margin: 0; /* wipe out browser differences for default values */
-	padding: 0; /* wipe out browser differences for default values  */
-	-webkit-box-sizing: border-box; /* use border-box box model everywhere */
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
 body {
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	color: #222;
 }
 
@@ -36,8 +29,8 @@ body {
 }
 
 /***************************
-* Navigator menu
-***************************/
+ * Navigator menu
+ **************************/
 
 #mainmenu ul li {
 	display: inline-block;
@@ -45,9 +38,14 @@ body {
 	text-transform: uppercase;
 }
 
+#mainmenu ul li a {
+	margin: 0.8rem;
+	padding: 0.5rem;
+}
+
 /***************************
-* YouTube embedding
-***************************/
+ * YouTube embedding
+ **************************/
 
 .embed-container {
 	position: relative;

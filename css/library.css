@@ -1,15 +1,43 @@
 /**
  * Generic styles
  *
- * @author Haroen Viaene <haroen.viaene@student.odisee.be>
+ * @author		Haroen Viaene <haroen.viaene@student.odisee.be>
  *
+ * @author		Bram(us) Van Damme <bramus.vandamme@kahosl.be>
+ * @author		Rogier van der Linde <rogier.vanderlinde@kahosl.be>
  */
 
-/* ===========================================
-	Regular classes
-============================================== */
+/***************************
+ * Regular Classes
+ **************************/
 
 .structural {
 	position: absolute;
 	left: -9999px;
+}
+
+.ir {
+	display: block;
+	background-size: 100%;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/***************************
+ * Reset things
+ **************************/
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box; /* use border-box box model everywhere */
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img {
+	border: 0;
 }
