@@ -1,12 +1,12 @@
 /**
- * General stylesheet for SAF
- *
- * @author Haroen Viaene <haroen.viaene@student.odisee.be>
- */
+* General stylesheet for SAF
+*
+* @author Haroen Viaene <haroen.viaene@student.odisee.be>
+*/
 
-/* =============================================
- * GENERAL
- =============================================== */
+/***************************
+* General
+***************************/
 
 html {
 	font-size: 0.625em;  /* set 1 rem = 16px * 0.625 = 10px */
@@ -33,4 +33,26 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+}
+
+/***************************
+* YouTube embedding
+***************************/
+
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
