@@ -28,9 +28,21 @@ body {
 	text-align: center;
 }
 
+a {
+	color: #000;
+}
+
+a:hover {
+	color: #ccc;
+}
+
 /***************************
  * Navigator menu
  **************************/
+
+#mainmenu ul {
+	padding: 1rem;
+}
 
 #mainmenu ul li {
 	display: inline-block;
@@ -39,6 +51,7 @@ body {
 }
 
 #mainmenu ul li a {
+	text-decoration: none;
 	margin: 0.8rem;
 	padding: 0.5rem;
 }
