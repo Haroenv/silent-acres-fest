@@ -36,6 +36,16 @@ body {
 }
 
 /***************************
+* Navigator menu
+***************************/
+
+#mainmenu ul li {
+	display: inline-block;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+}
+
+/***************************
 * YouTube embedding
 ***************************/
 
