@@ -40,9 +40,12 @@ a:hover {
  * Navigator menu
  **************************/
 
-/* give the logo a thing here*/
-#logo a::before {
-	content: "THE LOGO ______ ";
+.ir {
+	display: block;
+	background-size: 100%;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 #mainmenu ul {
