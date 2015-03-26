@@ -28,6 +28,8 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	margin-left: 3rem;
+	margin-right: 3rem;
 }
 
 a {
@@ -86,7 +88,9 @@ h1 a:hover{
  * Content
  **************************/
 
-
+p {
+	padding: 1rem;
+}
 
 /***************************
  * Footer
