@@ -16,4 +16,4 @@ Part of the exercise is to base on an existing wix design. I chose [this](http:/
 
 # Quick link
 
-<haroenv.github.io/silent-acres-fest>
+[haroenv.github.io/silent-acres-fest](https://haroenv.github.io/silent-acres-fest)
