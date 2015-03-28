@@ -40,6 +40,10 @@ a:hover {
 	color: #ccc;
 }
 
+p {
+	padding: 1rem;
+}
+
 /***************************
  * logo
  **************************/
@@ -200,11 +204,14 @@ a.ig:hover {
 }
 
 /***************************
- * Content
+ * Tickets
  **************************/
 
-p {
+.tickets h2 {
 	padding: 1rem;
+	text-transform: uppercase;
+	color: #999;
+	text-align: left;
 }
 
 /***************************
