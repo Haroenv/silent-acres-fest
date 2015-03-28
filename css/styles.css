@@ -93,6 +93,9 @@ h1 a:hover{
 /***************************
  * Article
  **************************/
+section.articles {
+	float: left;
+}
 
 .articles h2 {
 	padding: 1rem;
@@ -115,7 +118,6 @@ article.line-up {
 	margin: 1rem;
 	overflow: auto;
 	width: 50rem;
-	float: left;
 }
 
 article.line-up h1 {
@@ -144,16 +146,23 @@ article a.button-more:hover {
 /***************************
  * Aside with images
  **************************/
-article.featured {
-	width: 30rem;
+aside.sidebar {
 	float: right;
 }
 
-article.featured h1{
+article.featured {
+	width: 30rem;
+}
+
+article.featured h1 {
 	padding: 1rem;
 	color: #ccc;
 	border-bottom: 2px #000 solid;
 	margin-bottom: 1rem;
+}
+
+article.featured ul li {
+	display: inline-block;
 }
 
 /***************************
