@@ -96,6 +96,9 @@ h1 a:hover{
 
 .articles h2 {
 	padding: 1rem;
+	text-transform: uppercase;
+	color: #999;
+	text-align: left;
 }
 
 article.line-up img {
@@ -111,6 +114,8 @@ article.line-up {
 	text-align: left;
 	margin: 1rem;
 	overflow: auto;
+	width: 50rem;
+	float: left;
 }
 
 article.line-up h1 {
@@ -139,6 +144,10 @@ article a.button-more:hover {
 /***************************
  * Aside with images
  **************************/
+article.featured {
+	width: 30rem;
+	float: right;
+}
 
 article.featured h1{
 	padding: 1rem;
@@ -160,6 +169,7 @@ p {
  **************************/
 
 footer {
+	clear: both;
 	text-align: center;
 	height: 3rem;
 	line-height: 3rem;
