@@ -147,9 +147,11 @@ article.line-up img {
 	width: 21.5rem;
 	height: auto;
 }
+
 /***************************
  * Asidebar
  **************************/
+
 aside.sidebar {
 	float: right;
 	margin-top: 4rem;
@@ -174,6 +176,15 @@ article.featured ul li {
 	padding-left: 0.2rem;
 	margin-left: 0.3rem;
 	margin-right: 0.3rem;
+}
+
+article.featured img {
+	width: 30rem;
+	height: auto;
+}
+
+article.featured img:hover {
+	color: #ccc;
 }
 
 a.fb:hover {
