@@ -93,10 +93,17 @@ h1 a:hover{
 /***************************
  * Article
  **************************/
+
 .articles h2 {
 	padding: 1rem;
 }
 
+article img {
+	border: 1px solid #000;
+	padding: 0.1rem;
+	margin: 1rem;
+	float: left;
+}
 
 article .line-up h1 {
 	padding-top: 1rem;
@@ -104,9 +111,11 @@ article .line-up h1 {
 }
 
 article {
-	border:1px solid #021a40;
+	border:1px solid #000;
 	padding-top: 1rem;
 	text-align: left;
+	margin: 1rem;
+	overflow: auto;
 }
 
 article h1 {
