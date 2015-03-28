@@ -98,28 +98,53 @@ h1 a:hover{
 	padding: 1rem;
 }
 
-article img {
+article.line-up img {
 	border: 1px solid #000;
 	padding: 0.1rem;
 	margin: 1rem;
 	float: left;
 }
 
-article .line-up h1 {
-	padding-top: 1rem;
-	color: #ccc;
-}
-
-article {
-	border:1px solid #000;
+article.line-up {
+	border:3px solid #999;
 	padding-top: 1rem;
 	text-align: left;
 	margin: 1rem;
 	overflow: auto;
 }
 
-article h1 {
+article.line-up h1 {
 	padding: 1rem;
+}
+
+article a.button-more {
+	background-color: #F5F059;
+	color: #ccc;
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-decoration: none;
+	padding: 0.5rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	margin: 1rem;
+	margin-right: 3rem;
+	float: right;
+}
+
+article a.button-more:hover {
+	background-color: #e7e367;
+	color: #fff;
+}
+
+/***************************
+ * Aside with images
+ **************************/
+
+article.featured h1{
+	padding: 1rem;
+	color: #ccc;
+	border-bottom: 2px #000 solid;
+	margin-bottom: 1rem;
 }
 
 /***************************
