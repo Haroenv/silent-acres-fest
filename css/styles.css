@@ -126,7 +126,7 @@ article.line-up h1 {
 
 article a.button-more {
 	background-color: #F5F059;
-	color: #ccc;
+	color: #000;
 	font-weight: bold;
 	font-size: 1.4rem;
 	text-decoration: none;
@@ -140,29 +140,52 @@ article a.button-more {
 
 article a.button-more:hover {
 	background-color: #e7e367;
-	color: #fff;
+	color: #333;
 }
 
+article.line-up img {
+	width: 21.5rem;
+	height: auto;
+}
 /***************************
- * Aside with images
+ * Asidebar
  **************************/
 aside.sidebar {
 	float: right;
+	margin-top: 4rem;
 }
 
 article.featured {
 	width: 30rem;
+	text-align: left;
+	margin-bottom: 3rem;
 }
 
 article.featured h1 {
 	padding: 1rem;
-	color: #ccc;
+	font-size: 1.4rem;
 	border-bottom: 2px #000 solid;
 	margin-bottom: 1rem;
 }
 
 article.featured ul li {
 	display: inline-block;
+	padding-right: 0.2rem;
+	padding-left: 0.2rem;
+	margin-left: 0.3rem;
+	margin-right: 0.3rem;
+}
+
+a.fb:hover {
+	color: #3b5998;
+}
+
+a.tw:hover {
+	color: #00aced;
+}
+
+a.ig:hover {
+	color: #517fa4;
 }
 
 /***************************
