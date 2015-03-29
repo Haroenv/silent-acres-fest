@@ -214,6 +214,59 @@ a.ig:hover {
 	text-align: left;
 }
 
+.tickets ul li {
+	display: inline-block;
+}
+
+.tickets a.ir {
+	display: block;
+	width: 15rem;
+	height: 15rem;
+	background-repeat: no-repeat;
+	background-image: url(../img/tickets.png);
+	background-size: 2000px 800px;
+}
+
+.tickets a.vrijdag {
+	background-position: 0 0;
+}
+
+.tickets a.zaterdag {
+	background-position: -400px 0;
+}
+
+.tickets a.zondag {
+	background-position: -800px 0;
+}
+
+.tickets a.combi {
+	background-position: -1200px 0;
+}
+
+.tickets a.camping {
+	background-position: -1600px 0;
+}
+
+.tickets a.vrijdag:hover {
+	background-position: 0 -400px;
+}
+
+.tickets a.zaterdag:hover {
+	background-position: -400px -400px;
+}
+
+.tickets a.zondag:hover {
+	background-position: -800px -400px;
+}
+
+.tickets a.combi:hover {
+	background-position: -1200px -400px;
+}
+
+.tickets a.camping:hover {
+	background-position: -1600px -400px;
+}
+
 /***************************
  * Footer
  **************************/
