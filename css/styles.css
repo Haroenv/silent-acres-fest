@@ -167,7 +167,9 @@ article.featured {
 	margin-bottom: 3rem;
 }
 
-article.featured h1 {
+/* also used for  header 2 in info */
+article.featured h1,
+.info h2 {
 	padding: 1rem;
 	font-size: 1.4rem;
 	border-bottom: 2px #000 solid;
@@ -262,6 +264,20 @@ a.ig:hover {
 .tickets a.combi:hover { background-position: -480px -161px; }
 
 .tickets a.camping:hover { background-position: -640px -161px; }
+
+/***************************
+* spacing of the map
+**************************/
+.map {
+	float: left;
+	width: 60rem;
+}
+
+.contact {
+	float: right;
+	width: 25rem;
+}
+
 
 /***************************
 * Footer

@@ -1,15 +1,15 @@
 /**
- * Generic styles
- *
- * @author		Haroen Viaene <haroen.viaene@student.odisee.be>
- *
- * @author		Bram(us) Van Damme <bramus.vandamme@kahosl.be>
- * @author		Rogier van der Linde <rogier.vanderlinde@kahosl.be>
- */
+* Generic styles
+*
+* @author		Haroen Viaene <haroen.viaene@student.odisee.be>
+*
+* @author		Bram(us) Van Damme <bramus.vandamme@kahosl.be>
+* @author		Rogier van der Linde <rogier.vanderlinde@kahosl.be>
+*/
 
 /***************************
- * Regular Classes
- **************************/
+* Regular Classes
+**************************/
 
 .structural {
 	position: absolute;
@@ -25,8 +25,8 @@
 }
 
 /***************************
- * Reset things
- **************************/
+* Reset things
+**************************/
 
 * {
 	margin: 0;
@@ -43,8 +43,8 @@ img {
 }
 
 /***************************
- * YouTube embedding
- **************************/
+* YouTube embedding
+**************************/
 
 .embed-container {
 	position: relative;
@@ -65,7 +65,7 @@ img {
 }
 
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
