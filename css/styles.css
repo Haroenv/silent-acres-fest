@@ -101,7 +101,7 @@ section.articles {
 	float: left;
 }
 
-h2 {
+h2.main {
 	padding: 1rem;
 	text-transform: uppercase;
 	color: #999;
@@ -212,9 +212,11 @@ a.ig:hover {
 	width: 100%;
 }
 
-.featured h2 span {
+.featured h2.bandname span {
 	color: white;
-	font: bold 24px/45px Helvetica, Sans-Serif;
+	font-family: Helvetica, Sans-Serif;
+	font-weight: bold;
+	font-size:
 	letter-spacing: -1px;
 	background: #000;
 	padding: 1rem;
