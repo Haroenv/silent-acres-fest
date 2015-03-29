@@ -101,7 +101,7 @@ section.articles {
 	float: left;
 }
 
-.articles h2 {
+h2 {
 	padding: 1rem;
 	text-transform: uppercase;
 	color: #999;
@@ -167,9 +167,9 @@ article.featured {
 	margin-bottom: 3rem;
 }
 
-/* also used for  header 2 in info */
+/* also used for  header 3 in info */
 article.featured h1,
-.info h2 {
+.info h3 {
 	padding: 1rem;
 	font-size: 1.4rem;
 	border-bottom: 2px #000 solid;
