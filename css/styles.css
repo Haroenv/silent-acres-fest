@@ -184,8 +184,7 @@ article.featured {
 }
 
 /* also used for  header 3 in info */
-article.featured h1,
-.info h3 {
+.left-title {
 	padding: 1rem;
 	font-size: 1.4rem;
 	border-bottom: 2px #000 solid;
