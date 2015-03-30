@@ -130,6 +130,7 @@ article.line-up h1 {
 
 article a.button-more {
 	background-color: #F5F059;
+	/* border: 1px solid #000;  replaces the colour */
 	color: #000;
 	font-weight: bold;
 	font-size: 1.4rem;
@@ -144,6 +145,7 @@ article a.button-more {
 
 article a.button-more:hover {
 	background-color: #e7e367;
+	/* border: 2px solid #000;  replaces the colour */
 	color: #333;
 }
 
@@ -287,6 +289,7 @@ a.ig:hover {
 
 .address p {
 	padding: 0.3rem;
+	margin-bottom: 0;
 }
 
 /***************************
