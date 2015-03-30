@@ -220,7 +220,7 @@ a#ig:hover {
 	width: 100%;
 }
 
-.featured h2 {
+.featured .bandname {
 	position: absolute;
 	bottom: 2rem;
 	left: 0;
@@ -228,7 +228,7 @@ a#ig:hover {
 }
 
 /* name on image  */
-.featured h2.bandname span {
+.featured .bandname span {
 	color: white;
 	text-transform: uppercase;
 	font-family: Helvetica, Sans-Serif;
