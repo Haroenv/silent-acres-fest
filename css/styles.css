@@ -95,6 +95,22 @@ h1 a:hover{
 }
 
 /***************************
+* Movie cropping
+***************************/
+
+.movie {
+	width: 100%;
+	height: 30rem;
+	overflow: hidden;
+	display:block;
+}
+
+.movie video {
+	position: relative;
+	bottom: 20rem;
+}
+
+/***************************
 * Article
 ***************************/
 section.articles {
