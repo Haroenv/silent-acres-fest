@@ -121,7 +121,6 @@ article.line-up {
 	text-align: left;
 	margin: 1rem;
 	overflow: auto;
-	width: 60rem;
 }
 
 article.line-up h1 {
@@ -155,18 +154,33 @@ article.line-up img {
 }
 
 /***************************
+* columns
+***************************/
+
+.main-column {
+	width: 66%;
+	float: left;
+}
+
+.side-column {
+	width: 33%;
+	float: right;
+}
+
+/***************************
 * Asidebar
 ***************************/
 
-aside.sidebar {
+.sidebar {
 	float: right;
 	margin-top: 4rem;
+	width: 33%;
 }
 
 article.featured {
-	width: 25rem;
 	text-align: left;
 	margin-bottom: 3rem;
+	margin-top: 4rem;
 }
 
 /* also used for  header 3 in info */
@@ -186,25 +200,24 @@ article.featured ul li {
 	margin-right: 0.3rem;
 }
 
-a.fb:hover {
+a#fb:hover {
 	color: #3b5998;
 }
 
-a.tw:hover {
+a#tw:hover {
 	color: #00aced;
 }
 
-a.ig:hover {
+a#ig:hover {
 	color: #517fa4;
 }
 
 .featured {
 	position: relative;
-	width: 25rem;
 }
 
 .featured img {
-	width: 25rem;
+	width: 100%;
 }
 
 .featured h2 {
@@ -214,6 +227,7 @@ a.ig:hover {
 	width: 100%;
 }
 
+/* name on image  */
 .featured h2.bandname span {
 	color: white;
 	text-transform: uppercase;
@@ -273,15 +287,15 @@ a.ig:hover {
 /***************************
 * spacing of the map
 ***************************/
-.map {
+/*.map {
 	float: left;
 	width: 60rem;
-}
-
+}*/
+/*
 .contact {
 	float: right;
-	width: 25rem;
-}
+	width: 100%;
+}*/
 
 /***************************
 * spacing of the location
@@ -289,7 +303,6 @@ a.ig:hover {
 
 .address p {
 	padding: 0.3rem;
-	margin-bottom: 0;
 }
 
 /***************************
