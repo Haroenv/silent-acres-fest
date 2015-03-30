@@ -255,8 +255,7 @@ a#ig:hover {
 	padding: 0.3rem;
 }
 
-.tickets a.ir {
-	display: block;
+.tickets .ir {
 	width: 16rem;
 	height: 16rem;
 	background-repeat: no-repeat;
