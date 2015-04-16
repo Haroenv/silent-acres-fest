@@ -66,6 +66,12 @@ h1 a{
 	color: #000;
 }
 
+@media all and (max-width: 36rem) {
+	h1 a {
+		display: block;
+	}
+}
+
 h1 a:hover{
 	color: #000;
 }
@@ -184,7 +190,7 @@ article.line-up img {
 	float: right;
 }
 
-@media all and (max-width: 70rem) {
+@media all and (max-width: rem) {
 	.side-column {
 		width: 100%;
 		float: left;
@@ -307,25 +313,16 @@ a#ig:hover {
 	background-size: 800px 320px;
 }
 
-.tickets a.vrijdag { background-position: 0 0; }
-
-.tickets a.zaterdag { background-position: -160px 0; }
-
-.tickets a.zondag { background-position: -320px 0; }
-
-.tickets a.combi { background-position: -480px 0; }
-
-.tickets a.camping { background-position: -640px 0; }
-
-.tickets a.vrijdag:hover { background-position: 0 -161px; }
-
+.tickets a.vrijdag        { background-position:    0      0  ; }
+.tickets a.zaterdag       { background-position: -160px    0  ; }
+.tickets a.zondag         { background-position: -320px    0  ; }
+.tickets a.combi          { background-position: -480px    0  ; }
+.tickets a.camping        { background-position: -640px    0  ; }
+.tickets a.vrijdag:hover  { background-position:    0   -161px; }
 .tickets a.zaterdag:hover { background-position: -160px -161px; }
-
-.tickets a.zondag:hover { background-position: -320px -161px; }
-
-.tickets a.combi:hover { background-position: -480px -161px; }
-
-.tickets a.camping:hover { background-position: -640px -161px; }
+.tickets a.zondag:hover   { background-position: -320px -161px; }
+.tickets a.combi:hover    { background-position: -480px -161px; }
+.tickets a.camping:hover  { background-position: -640px -161px; }
 
 /***************************
 * spacing of the location
