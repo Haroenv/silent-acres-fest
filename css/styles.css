@@ -23,7 +23,7 @@ body {
 }
 
 .wrapper {
-	min-width: 48rem;
+	/*min-width: 48rem;*/
 	max-width: 96rem;
 	margin-left: auto;
 	margin-right: auto;
@@ -58,7 +58,8 @@ h1 a{
 	background-image: url(../img/logo.svg);
 	background-repeat: no-repeat;
 	background-position: center top;
-	padding-top: 9rem;
+	background-size: 100% auto;
+	padding-top: 9.2rem;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: lighter;
@@ -113,6 +114,7 @@ h1 a:hover{
 /***************************
 * Article
 ***************************/
+
 section.articles {
 	float: left;
 }
@@ -143,9 +145,9 @@ article.line-up h1 {
 	padding: 1rem;
 }
 
-article a.button-more {
+a.button-more {
 	background-color: #999;
-	/* border: 1px solid #000;  replaces the colour */
+	/* border: 1px solid #000; *//* replaces the colour */
 	color: #fff;
 	font-weight: bold;
 	font-size: 1.4rem;
@@ -158,9 +160,9 @@ article a.button-more {
 	float: right;
 }
 
-article a.button-more:hover {
+a.button-more:hover {
 	background-color: #ccc;
-	/* border: 2px solid #000;  replaces the colour */
+	/*border: 2px solid #000; *//* replaces the colour */
 }
 
 article.line-up img {
@@ -180,6 +182,34 @@ article.line-up img {
 .side-column {
 	width: 33%;
 	float: right;
+}
+
+@media all and (max-width: 70rem) {
+	.side-column {
+		width: 100%;
+		float: left;
+	}
+
+	.main-column {
+		width: 100%;
+		float: left;
+	}
+}
+
+@media all and (max-width: 44rem) {
+	a.button-more {
+		float: left;
+	}
+
+	article.line-up p {
+		float: left;
+	}
+}
+
+@media all and (max-width: 33rem) {
+	.line-up img {
+
+	}
 }
 
 /***************************
