@@ -204,7 +204,7 @@ article.line-up img {
 }
 
 @media all and (max-width: 440px) {
-	.line-up img {
+	article.line-up img {
 		width: 90%;
 		height: auto;
 	}
