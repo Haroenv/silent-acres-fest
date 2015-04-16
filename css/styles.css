@@ -101,11 +101,10 @@ h1 a:hover{
 	content: "||   ";
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 500px) {
 	#mainmenu ul li {
 		list-style-type: none;
 		display: list-item;
-		margin-left: 0;
 		text-align: left;
 	}
 
@@ -115,14 +114,13 @@ h1 a:hover{
 	}
 
 	#mainmenu ul {
-		/* todo: make this centered */
 		padding-left: 1rem;
 	}
 }
 
-@media all and (max-width: 440px) {
-	#mainmenu ul {
-		padding-left: 1rem;
+@media all and (max-width: 700px) {
+	#mainmenu ul li a{
+		margin: 0.1rem;
 	}
 }
 
