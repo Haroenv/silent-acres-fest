@@ -101,15 +101,42 @@ h1 a:hover{
 	content: "||   ";
 }
 
+@media all and (max-width: 700px) {
+	#mainmenu ul li {
+		list-style-type: none;
+		display: list-item;
+		margin-left: 0;
+		text-align: left;
+	}
+
+	#mainmenu ul li a {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	#mainmenu ul {
+		/* todo: make this centered */
+		padding-left: 1rem;
+	}
+}
+
+@media all and (max-width: 440px) {
+	#mainmenu ul {
+		padding-left: 1rem;
+	}
+}
+
 /***************************
 * Movie cropping
 ***************************/
+
+/* todo: make cropping work at other sizes than my screen */
 
 .movie {
 	width: 100%;
 	height: 30rem;
 	overflow: hidden;
-	display:block;
+	display: block;
 }
 
 .movie video {
@@ -121,7 +148,7 @@ h1 a:hover{
 * Article
 ***************************/
 
-section.articles {
+.articles {
 	float: left;
 }
 
@@ -176,6 +203,13 @@ article.line-up img {
 	height: auto;
 }
 
+@media all and (max-width: 440px) {
+	.line-up img {
+		width: 90%;
+		height: auto;
+	}
+}
+
 /***************************
 * columns
 ***************************/
@@ -209,12 +243,6 @@ article.line-up img {
 
 	article.line-up p {
 		float: left;
-	}
-}
-
-@media all and (max-width: 330px) {
-	.line-up img {
-		width: 20px;
 	}
 }
 
@@ -332,6 +360,8 @@ a#ig:hover {
 	background-image: url(../img/tickets.png);
 	background-size: 800px 320px;
 }
+
+/* image backgrounds */
 
 .tickets a.vrijdag        { background-position:    0      0  ; }
 .tickets a.zaterdag       { background-position: -160px    0  ; }
