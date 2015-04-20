@@ -297,6 +297,7 @@ article.featured ul li {
 	margin-right: 0.3rem;
 }
 
+/* todo: get rid of i tag */
 a#fb:hover {
 	color: #3b5998;
 }
