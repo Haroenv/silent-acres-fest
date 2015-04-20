@@ -157,6 +157,8 @@ h2.main {
 	text-align: left;
 }
 
+/* line-up */
+
 article.line-up img {
 	border: 1px solid #000;
 	padding: 0.1rem;
@@ -176,9 +178,20 @@ article.line-up h1 {
 	padding: 1rem;
 }
 
+article.line-up img {
+	width: 21.5rem;
+	height: auto;
+}
+
+@media all and (max-width: 440px) {
+	article.line-up img {
+		width: 90%;
+		height: auto;
+	}
+}
+
 a.button-more {
 	background-color: #999;
-	/* border: 1px solid #000; *//* replaces the colour */
 	color: #fff;
 	font-weight: bold;
 	font-size: 1.4rem;
@@ -191,21 +204,24 @@ a.button-more {
 	float: right;
 }
 
+/* original version */
+/*a.button-more {
+	background-color: yellow;
+	color: #fff;
+	border: 1px solid #000;
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-decoration: none;
+	padding: 0.5rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	margin: 1rem;
+	margin-right: 3rem;
+	float: right;
+}*/
+
 a.button-more:hover {
 	background-color: #ccc;
-	/*border: 2px solid #000; *//* replaces the colour */
-}
-
-article.line-up img {
-	width: 21.5rem;
-	height: auto;
-}
-
-@media all and (max-width: 440px) {
-	article.line-up img {
-		width: 90%;
-		height: auto;
-	}
 }
 
 /***************************
