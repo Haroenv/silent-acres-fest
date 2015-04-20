@@ -285,8 +285,10 @@ article.featured {
 	text-align: left;
 	margin-bottom: 3rem;
 	margin-top: 4rem;
+	position: relative;
 }
 
+/* social icons */
 article.featured ul li {
 	display: inline-block;
 	padding-right: 0.2rem;
@@ -307,10 +309,7 @@ a#ig:hover {
 	color: #517fa4;
 }
 
-.featured {
-	position: relative;
-}
-
+/* featured text on image */
 .featured img {
 	width: 100%;
 }
@@ -335,6 +334,7 @@ a#ig:hover {
 	line-height: 3rem;
 }
 
+/* name under image at too small sizes */
 @media all and (max-width: 700px){
 	.featured img {
 		width: 100%;
