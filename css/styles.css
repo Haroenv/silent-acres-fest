@@ -221,6 +221,7 @@ a.button-more {
 	margin: 1rem;
 	margin-right: 3rem;
 	float: right;
+	transition: background-color .2s, color .2s, border-color .2s;
 }
 
 /* original version */
