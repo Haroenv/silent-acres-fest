@@ -171,8 +171,12 @@ h1 a:hover{
 	margin-top: -25%;
 	height: 200%;
 	width: 100%;
-/*	position: relative;
-	bottom: 20rem;*/
+}
+
+@media screen and (min-width: 950px) {
+	.movie video {
+		margin-top: -15%;
+	}
 }
 
 /***************************
