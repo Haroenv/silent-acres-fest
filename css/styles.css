@@ -179,6 +179,12 @@ h1 a:hover{
 	}
 }
 
+@media screen and (min-width: 1600px) {
+	.movie video {
+		margin-top: -10%;
+	}
+}
+
 /***************************
 * Article
 ***************************/
