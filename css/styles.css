@@ -329,7 +329,8 @@ article.featured ul li {
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+	        transform: translate(0, 0);
 	padding-right: 0.3rem;
 	vertical-align: top;
 	font-size: 2rem;
@@ -344,6 +345,13 @@ article.featured ul li {
 /* featured text on image */
 .featured img {
 	width: 100%;
+	height: auto;
+	display: block;
+	box-sizing: border-box;
+	background: url(../img/band2.jpg) no-repeat;
+	padding-left: 10%; /* Equal to width of new image */
+	/*todo: fix this*/
+	/*todo: animate*/
 }
 
 .featured .bandname {
