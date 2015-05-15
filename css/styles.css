@@ -263,11 +263,11 @@ a.button-more {
 	margin: 1rem;
 	margin-right: 3rem;
 	float: right;
-}*/
+	}*/
 
-a.button-more:hover {
-	background-color: #ccc;
-}
+	a.button-more:hover {
+		background-color: #ccc;
+	}
 
 /***************************
 * columns
@@ -337,7 +337,8 @@ article.featured ul li {
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+	        transform: translate(0, 0);
 	padding-right: 0.3rem;
 	vertical-align: top;
 	font-size: 2rem;
@@ -403,12 +404,24 @@ article.featured ul li {
 	padding: 0.3rem;
 }
 
-.tickets .ir {
+.tickets .ticket {
+	display: block;
+	background-size: 100%;
 	width: 16rem;
 	height: 16rem;
 	background-repeat: no-repeat;
 	background-image: url(../img/tickets.png);
 	background-size: 800px 320px;
+}
+
+.ticket li {
+	font-size: 4rem;
+	color: #fff;
+	font-weight: 900;
+}
+
+.ticket:hover li {
+	color: #000;
 }
 
 /* image backgrounds */
@@ -418,11 +431,15 @@ article.featured ul li {
 .tickets a.zondag         { background-position: -320px    0  ; }
 .tickets a.combi          { background-position: -480px    0  ; }
 .tickets a.camping        { background-position: -640px    0  ; }
-.tickets a.vrijdag:hover  { background-position:    0   -161px; }
-.tickets a.zaterdag:hover { background-position: -160px -161px; }
-.tickets a.zondag:hover   { background-position: -320px -161px; }
-.tickets a.combi:hover    { background-position: -480px -161px; }
-.tickets a.camping:hover  { background-position: -640px -161px; }
+
+.tickets a  {
+	-webkit-filter: opacity(50%);
+			filter: opacity(50%);
+}
+.tickets a:hover  {
+	-webkit-filter: opacity(-50%);
+			filter: opacity(-50%);
+}
 
 /***************************
 * spacing of the location
