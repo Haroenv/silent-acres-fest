@@ -486,6 +486,7 @@ nav[role="navigation"] {
 }
 
 .cd-pagination a {
+	text-decoration: none;
     border: 3px solid #999;
 }
 
