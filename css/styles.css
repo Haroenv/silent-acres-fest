@@ -1,3 +1,4 @@
+
 /**
 * General stylesheet for SAF
 *
@@ -6,6 +7,7 @@
 * @author		Bram(us) Van Damme <bramus.vandamme@kahosl.be>
 * @author		Rogier van der Linde <rogier.vanderlinde@kahosl.be>
 */
+
 /***************************
 * General
 ***************************/
@@ -56,6 +58,7 @@ a:hover {
 p {
     padding: 1rem;
 }
+
 /***************************
 * logo
 ***************************/
@@ -87,6 +90,7 @@ h1 a {
 h1 a:hover {
     color: #000;
 }
+
 /***************************
 * Headings
 ***************************/
@@ -104,6 +108,7 @@ h1 a:hover {
     color: #999;
     text-align: left;
 }
+
 /***************************
 * Navigator menu
 ***************************/
@@ -158,6 +163,7 @@ h1 a:hover {
         margin: 0.1rem;
     }
 }
+
 /***************************
 * Movie cropping
 ***************************/
@@ -208,6 +214,7 @@ h1 a:hover {
         margin-bottom: -10%;
     }
 }
+
 /***************************
 * Article
 ***************************/
@@ -266,6 +273,7 @@ a.button-more {
 a.button-more:hover {
     background-color: #999;
 }
+
 /***************************
 * columns
 ***************************/
@@ -299,6 +307,7 @@ a.button-more:hover {
         float: left;
     }
 }
+
 /***************************
 * Asidebar
 ***************************/
@@ -406,6 +415,7 @@ article.featured ul li {
         float: left;
     }
 }
+
 /***************************
 * Tickets
 ***************************/
@@ -478,6 +488,7 @@ article.featured ul li {
     -webkit-filter: brightness(100%) opacity(50%);
     filter: brightness(100%) opacity(50%);
 }
+
 /***************************
 * spacing of the location
 ***************************/
@@ -485,6 +496,7 @@ article.featured ul li {
 .address p {
     padding: 0.3rem;
 }
+
 /***************************
 * Footer
 ***************************/
@@ -497,6 +509,7 @@ footer {
     font-size: 1.1rem;
     padding-top: 3rem;
 }
+
 /***************************
 * Navigation
 * courtesy of: codyhouse
