@@ -205,7 +205,7 @@ article.line-up {
 }
 
 article.line-up h1 {
-	width: 65%;
+	width: 68%;
     padding: 1rem;
 }
 
@@ -230,8 +230,8 @@ article.line-up .time {
 	text-align: right;
 	font-weight: bold;
 }
-@media all and (max-width: 570px) {	article.line-up .time { width: 40%; } }
-@media all and (min-width: 660px) {	article.line-up .time { width: 20%; } }
+@media all and (max-width: 570px) {	article.line-up .time { width: 40%; } article.line-up h1 {width: 58%;}}
+@media all and (min-width: 660px) {	article.line-up .time { width: 25%; } article.line-up h1 {width: 73%;}}
 
 article.line-up img {
     width: 21.5rem;
