@@ -201,6 +201,7 @@ article.line-up {
     text-align: left;
     margin: 1rem;
     overflow: auto;
+    position: relative;
 }
 
 article.line-up h1 {
@@ -208,8 +209,10 @@ article.line-up h1 {
 }
 
 article.line-up .time {
+	position: absolute;
+	top: 1rem;
+	right: 0;
 	padding: 1rem;
-	float: right;
 	font-weight: bold;
 }
 
