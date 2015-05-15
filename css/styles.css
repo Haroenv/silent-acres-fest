@@ -27,7 +27,7 @@ html {
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
-    color: #222;
+    color: #000;
 }
 
 body > * {
@@ -36,11 +36,9 @@ body > * {
 
 .wrapper {
     max-width: 96rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 0 3rem;
 }
 
 a {
