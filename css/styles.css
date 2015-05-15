@@ -43,7 +43,7 @@ body > * {
 
 a {
     color: #000;
-    transition: background-color .2s, color .2s, border-color .2s;
+    transition: all .2s ease-in-out;
 }
 
 a:hover {
@@ -268,7 +268,7 @@ a.button-more {
 }
 
 a.button-more:hover {
-    background-color: #999;
+    background-color: #ccc;
 }
 
 /***************************
