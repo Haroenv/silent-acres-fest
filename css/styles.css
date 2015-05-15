@@ -208,6 +208,7 @@ article.line-up h1 {
 }
 
 article.line-up .time {
+	padding: 1rem;
 	float: right;
 	font-weight: bold;
 }
