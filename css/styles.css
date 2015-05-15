@@ -247,27 +247,13 @@ a.button-more {
     margin: 1rem;
     margin-right: 3rem;
     float: right;
-    transition: background-color .2s, color .2s, border-color .2s;
+    transition: all .2s ease-in-out;
 }
-/* original version */
-/*a.button-more {
-	background-color: yellow;
-	color: #fff;
-	border: 1px solid #000;
-	font-weight: bold;
-	font-size: 1.4rem;
-	text-decoration: none;
-	padding: 0.5rem;
-	padding-left: 3rem;
-	padding-right: 3rem;
-	margin: 1rem;
-	margin-right: 3rem;
-	float: right;
-	}*/
 
 a.button-more:hover {
     background-color: #ccc;
 }
+
 /***************************
 * columns
 ***************************/
@@ -439,10 +425,12 @@ article.featured ul li {
 .ticket li {
     font-size: 4rem;
     color: #FFF;
-    font-weight: 600;
+    font-weight: bold;
+    transition: color .2s ease-in-out;
 }
 
 .ticket:hover li {
+	font-weight: bold;
     color: #000;
 }
 /* image backgrounds */
@@ -469,14 +457,14 @@ article.featured ul li {
 /* filters */
 
 .ticket::before {
-    transition: -webkit-filter 2s, filter 2s;
-    -webkit-filter: brightness(40%);
-    filter: brightness(40%);
+	transition: .2s all ease-in-out;
+    -webkit-filter: brightness(40%) opacity(100%);
+    filter: brightness(40%) opacity(100%);
 }
 
 .ticket:hover::before {
-    -webkit-filter: opacity(50%);
-    filter: opacity(50%);
+    -webkit-filter: brightness(100%) opacity(50%);
+    filter: brightness(100%) opacity(50%);
 }
 /***************************
 * spacing of the location
