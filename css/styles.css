@@ -205,16 +205,33 @@ article.line-up {
 }
 
 article.line-up h1 {
+	width: 65%;
     padding: 1rem;
 }
+
+/* breakpoints for the header, because of the time */
+/*@media all and (max-width: 870px) {	article.line-up h1 { width: 40rem; } }
+@media all and (max-width: 780px) {	article.line-up h1 { width: 35rem; } }
+@media all and (max-width: 730px) {	article.line-up h1 { width: 30rem; } }
+@media all and (max-width: 660px) {	article.line-up h1 { width: 25rem; } }
+@media all and (max-width: 560px) {	article.line-up h1 { width: 20rem; } }
+
+@media all and (max-width: 500px) {	article.line-up h1 { width: 30rem; } }
+@media all and (max-width: 460px) {	article.line-up h1 { width: 25rem; } }
+@media all and (max-width: 390px) {	article.line-up h1 { width: 20rem; } }
+@media all and (max-width: 340px) {	article.line-up h1 { width: 13rem; } }*/
 
 article.line-up .time {
 	position: absolute;
 	top: 1rem;
 	right: 0;
 	padding: 1rem;
+	width: 30%;
+	text-align: right;
 	font-weight: bold;
 }
+@media all and (max-width: 570px) {	article.line-up .time { width: 40%; } }
+@media all and (min-width: 660px) {	article.line-up .time { width: 20%; } }
 
 article.line-up img {
     width: 21.5rem;
