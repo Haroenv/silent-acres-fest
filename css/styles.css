@@ -399,25 +399,34 @@ article.featured ul li {
 * Tickets
 ***************************/
 
-.tickets ul li {
+.tickets li {
 	display: inline-block;
 	padding: 0.3rem;
 }
 
-.tickets .ticket {
+.ticket {
 	display: block;
-	background-size: 100%;
 	width: 16rem;
 	height: 16rem;
-	background-repeat: no-repeat;
+	position: relative;
+}
+
+.ticket::before {
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 16rem;
+	height: 16rem;
+	content: '';
 	background-image: url(../img/tickets.png);
-	background-size: 800px 320px;
+	background-size: 800px 160px;
 }
 
 .ticket li {
 	font-size: 4rem;
-	color: #fff;
-	font-weight: 900;
+	color: #FFF;
+	font-weight: 600;
 }
 
 .ticket:hover li {
@@ -426,19 +435,21 @@ article.featured ul li {
 
 /* image backgrounds */
 
-.tickets a.vrijdag        { background-position:    0      0  ; }
-.tickets a.zaterdag       { background-position: -160px    0  ; }
-.tickets a.zondag         { background-position: -320px    0  ; }
-.tickets a.combi          { background-position: -480px    0  ; }
-.tickets a.camping        { background-position: -640px    0  ; }
+.vrijdag::before  { background-position:    0   0 ; }
+.zaterdag::before { background-position: -160px 0 ; }
+.zondag::before   { background-position: -320px 0 ; }
+.combi::before    { background-position: -480px 0 ; }
+.camping::before  { background-position: -640px 0 ; }
 
-.tickets a  {
+/* filters */
+
+.ticket::before {
+	-webkit-filter: brightness(40%);
+			filter: brightness(40%);
+}
+.ticket:hover::before {
 	-webkit-filter: opacity(50%);
 			filter: opacity(50%);
-}
-.tickets a:hover  {
-	-webkit-filter: opacity(-50%);
-			filter: opacity(-50%);
 }
 
 /***************************
