@@ -43,7 +43,7 @@ body > * {
 
 a {
     color: #000;
-    transition: all .2s ease-in-out;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out, border .2s ease-in-out;
 }
 
 a:hover {
@@ -564,7 +564,7 @@ nav[role="navigation"] {
     user-select: none;
     /* use padding and font-size to change buttons size */
     padding: .6em .8em;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .cd-pagination a {
