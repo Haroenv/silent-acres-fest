@@ -65,6 +65,9 @@
                 <input class="long" type="text" name="achternaam" id="achternaam" placeholder="achternaam" required> -->
                 <label for="email">e-mailadres*</label>
                 <input class="long" type="email" name="email" id="email" placeholder="email" required>
+                <!--[if IE]>
+                <input type="submit" name="submit" id=submit class="form">
+                <![endif]-->
             </fieldset>
             <p class="sum">Totaal: <span id="tot">€0</span></p>
         </form>
@@ -95,7 +98,7 @@
 
         // Safari has broken `requred` for forms
         // this will also detect some other browsers, but meh
-        if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+        if ((navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)||(navigator.userAgent.indexOf('') != -1)) {
             var form = document.getElementById('ticket');
             form.noValidate = true;
             form.addEventListener('submit', function (event) {
