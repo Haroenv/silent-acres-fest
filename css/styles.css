@@ -64,7 +64,7 @@ h1 {
 
 h1 a {
 	background: url(../img/fallback.png);
-    background-image: url(../img/logo.svg), none;
+    background-image: url(../img/logo.svg), none; /* svg doesn't need a fallback when it's also using multiple backgrounds */
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% auto;
