@@ -98,7 +98,7 @@
 
         // Safari has broken `requred` for forms
         // this will also detect some other browsers, but meh
-        if ((navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)||(navigator.userAgent.indexOf('') != -1)) {
+        if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
             var form = document.getElementById('ticket');
             form.noValidate = true;
             form.addEventListener('submit', function (event) {
