@@ -64,6 +64,7 @@
                 <label for="email">e-mailadres</label>
                 <input class="long" type="email" name="email" id="email" placeholder="email" required>
             </fieldset>
+            <p>Totaal: <span id="tot">€0</span></p>
         </form>
         <button class="form" form="ticket" type="submit">betaal</button>
     </div>
@@ -82,6 +83,11 @@
             var p = hashParams[i].split('=');
             document.getElementById(p[0]).value = decodeURIComponent(p[1]);;
         }
+        function write () {
+            var tot = document.getElementById('vrijdag').value*10 + document.getElementById('zaterdag').value*10 + document.getElementById('zondag').value*10 + document.getElementById('combi').value*24 + document.getElementById('camping').value*5
+            document.getElementById('tot').innerHTML = '€'+tot
+        }
+        setInterval(write,1000);
     </script>
 </body>
 
