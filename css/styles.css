@@ -63,7 +63,8 @@ h1 {
 }
 
 h1 a {
-    background-image: url(../img/logo.svg);
+	background: url(../img/fallback.png);
+    background-image: url(../img/logo.svg), none;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% auto;
