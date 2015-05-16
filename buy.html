@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+	Silent Acres Fest
+	Home page
+	Project WebTechnieken 1 #ikdoeict @Odisee
+	2014-2015
+	@author Haroen Viaene <haroen.viaene@student.odisee.be>
+-->
+<html lang="nl">
+
+<head>
+    <title> Silent Acres Fest </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/library.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon-iphone.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="wrapper">
+            <h1 class="logo"><a href="index.html">Silent Acres Fest</a></h1>
+            <nav id="mainmenu">
+                <h2 class="structural">Main navigation</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lineup.html">Line-up</a></li>
+                    <li><a href="tickets.html class="active"">Tickets</a></li>
+                    <li><a href="contact.html">Waar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- content -->
+    <div class="wrapper">
+        <h2 class="main">Koop een ticket</h2>
+        <!-- <form action="javascript:alert('jammer, er kunnen nog geen tickets gekocht worden')" id="ticket"> -->
+        <form action="#" id="ticket">
+            <fieldset>
+                <legend>dagen</legend>
+                <label for="vrijdag">vrijdag 21/8/2015</label>
+                <input type="checkbox" id="vrijdag" name="vrijdag">
+                <label for="zaterdag">zaterdag 22/8/2015</label>
+                <input type="checkbox" id="zaterdag" name="zaterdag">
+                <label for="zondag">zondag 23/8/2015</label>
+                <input type="checkbox" id="zondag" name="zondag">
+                <label for="combi">combi 21-23</label>
+                <input type="checkbox" id="combi" name="combi">
+                <label for="camping">camping 21-23</label>
+                <input type="checkbox" id="camping" name="camping">
+            </fieldset>
+            <fieldset>
+                <legend>persoonlijke info</legend>
+                <label for="voornaam">voornaam</label>
+                <input type="text" name="voornaam" id="voornaam" placeholder="voornaam" required>
+                <label for="achternaam">achternaam</label>
+                <input type="text" name="achternaam" id="achternaam" placeholder="achternaam" required>
+                <label for="email">e-mailadres</label>
+                <input type="email" name="email" id="email" placeholder="email" required>
+            </fieldset>
+        </form>
+        <button form="ticket" type="submit" disabled>bevestig</button>
+    </div>
+    <!-- copyright information -->
+    <footer>
+        <div class="wrapper">
+            <h2 class="structural">copyright information</h2>
+            <p>
+                © 2015 — Silent Acres v.z.w. — site design: <a href="http://haroen.me">Haroen Viaene</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

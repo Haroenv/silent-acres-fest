@@ -454,6 +454,26 @@ article.featured ul li {
 }
 
 /***************************
+* Form
+***************************/
+
+fieldset {
+	border: 0;
+	border-bottom: 1px solid #000;
+}
+
+form label {
+	float: left;
+	clear: left;
+	margin: 0.3rem;
+}
+
+form input {
+	float: left;
+	margin: 0.3rem;
+}
+
+/***************************
 * Footer
 ***************************/
 
