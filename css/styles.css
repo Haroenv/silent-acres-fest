@@ -111,21 +111,26 @@ h1 a:hover {
     padding-top: 1rem;
 }
 
-#mainmenu ul li {
+#mainmenu li {
     display: inline-block;
     font-size: 1.3rem;
     text-transform: uppercase;
 }
 
-#mainmenu ul li a {
+#mainmenu a {
     text-decoration: none;
     margin: 3rem;
     padding: 0.5rem 0.5rem 1px 0.5rem;
+    border-left: 1px solid #000;
 }
 
-#mainmenu ul li a::before {
-    content: "||   ";
+#mainmenu a:hover {
+	border-left: 1px solid #999;
 }
+
+/*#mainmenu ul li a::before {
+    content: "||   ";
+}*/
 
 .active {
     border-bottom: 1px solid #000;
