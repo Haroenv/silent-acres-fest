@@ -13,46 +13,46 @@
 ***************************/
 
 @font-face {
-    font-family: 'FontAwesome';
-    src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0');
-    src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'FontAwesome';
+	src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0');
+	src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 html {
-    font-size: .625em; /* set 1 rem = 16px * .625 = 10px */
+	font-size: .625em; /* set 1 rem = 16px * .625 = 10px */
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: lighter;
-    color: #000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	color: #000;
 }
 
 body > * {
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 .wrapper {
-    max-width: 96rem;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0 3rem;
+	max-width: 96rem;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 3rem;
 }
 
 a {
-    color: #000;
-    -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out, border .2s ease-in-out;
-    transition: color .2s ease-in-out, background-color .2s ease-in-out, border .2s ease-in-out;
+	color: #000;
+	-webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out, border .2s ease-in-out;
+	transition: color .2s ease-in-out, background-color .2s ease-in-out, border .2s ease-in-out;
 }
 
 a:hover {
-    color: #999;
+	color: #999;
 }
 
 p {
-    padding: 1rem;
+	padding: 1rem;
 }
 
 /***************************
@@ -60,30 +60,30 @@ p {
 ***************************/
 
 h1 {
-    padding: 10rem 3rem 1rem;
+	padding: 10rem 3rem 1rem;
 }
 
 h1 a {
-    background: url(../img/fallback.png);
-    background-image: url(../img/logo.svg), none; /* svg doesn't need a fallback when it's also using multiple backgrounds */
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100% auto;
-    padding-top: 9.2rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: lighter;
-    color: #000;
+	background: url(../img/fallback.png);
+	background-image: url(../img/logo.svg), none; /* svg doesn't need a fallback when it's also using multiple backgrounds */
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% auto;
+	padding-top: 9.2rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: lighter;
+	color: #000;
 }
 
 @media all and (max-width: 360px) {
-    h1 a {
-        display: block;
-    }
+	h1 a {
+		display: block;
+	}
 }
 
 h1 a:hover {
-    color: #000;
+	color: #000;
 }
 
 /***************************
@@ -91,17 +91,17 @@ h1 a:hover {
 ***************************/
 
 .left-title {
-    padding: 1rem;
-    font-size: 1.4rem;
-    border-bottom: 2px #000 solid;
-    margin-bottom: 1rem;
+	padding: 1rem;
+	font-size: 1.4rem;
+	border-bottom: 2px #000 solid;
+	margin-bottom: 1rem;
 }
 
 .main {
-    padding: 1rem;
-    text-transform: uppercase;
-    color: #999;
-    text-align: left;
+	padding: 1rem;
+	text-transform: uppercase;
+	color: #999;
+	text-align: left;
 }
 
 /***************************
@@ -109,25 +109,25 @@ h1 a:hover {
 ***************************/
 
 #mainmenu ul {
-    padding: 3rem;
-    padding-top: 1rem;
+	padding: 3rem;
+	padding-top: 1rem;
 }
 
 #mainmenu li {
-    display: inline-block;
-    font-size: 1.3rem;
-    text-transform: uppercase;
+	display: inline-block;
+	font-size: 1.3rem;
+	text-transform: uppercase;
 }
 
 #mainmenu a {
-    text-decoration: none;
-    margin: 3rem;
-    padding: .5rem .5rem 1px .5rem;
-    border-left: 1px solid #000;
+	text-decoration: none;
+	margin: 3rem;
+	padding: .5rem .5rem 1px .5rem;
+	border-left: 1px solid #000;
 }
 
 #mainmenu a:hover {
-    border-left: 1px solid #999;
+	border-left: 1px solid #999;
 }
 
 /*#mainmenu ul li a::before {
@@ -135,47 +135,47 @@ h1 a:hover {
     }*/
 
     .active {
-        border-bottom: 1px solid #000;
+    	border-bottom: 1px solid #000;
     }
 
     .active:hover {
-        border-bottom: 1px solid #999;
+    	border-bottom: 1px solid #999;
     }
 
     @media all and (max-width: 500px) {
-        #mainmenu ul li {
-            list-style-type: none;
-            display: list-item;
-            text-align: left;
-            margin: 0 2rem .6rem 2rem;
-        }
-        #mainmenu ul li a {
-            width: 100%;
-            display: inline-block;
-            margin-left: 0;
-            background-color: #ccc;
-            padding: .6rem .3rem .6rem 1rem;
-        }
-        #mainmenu ul li a:hover {
-            color: #000;
-            background-color: #aaa;
-        }
-        .active {
-            background-color: #999 !important;
-            border: none;
-        }
-        .active:hover {
-            border: none;
-        }
-        #mainmenu ul {
-            padding-left: 1rem;
-        }
+    	#mainmenu ul li {
+    		list-style-type: none;
+    		display: list-item;
+    		text-align: left;
+    		margin: 0 2rem .6rem 2rem;
+    	}
+    	#mainmenu ul li a {
+    		width: 100%;
+    		display: inline-block;
+    		margin-left: 0;
+    		background-color: #ccc;
+    		padding: .6rem .3rem .6rem 1rem;
+    	}
+    	#mainmenu ul li a:hover {
+    		color: #000;
+    		background-color: #aaa;
+    	}
+    	.active {
+    		background-color: #999 !important;
+    		border: none;
+    	}
+    	.active:hover {
+    		border: none;
+    	}
+    	#mainmenu ul {
+    		padding-left: 1rem;
+    	}
     }
 
     @media all and (max-width: 700px) {
-        #mainmenu ul li a {
-            margin: 1.5rem;
-        }
+    	#mainmenu ul li a {
+    		margin: 1.5rem;
+    	}
     }
 
 /***************************
@@ -183,15 +183,15 @@ h1 a:hover {
 ***************************/
 
 .movie {
-    width: 100%;
-    height: 30rem;
-    overflow: hidden;
-    display: block;
+	width: 100%;
+	height: 30rem;
+	overflow: hidden;
+	display: block;
 }
 
 .movie video {
-    height: 200%;
-    width: 100%;
+	height: 200%;
+	width: 100%;
 }
 
 @media screen and (max-width: 360px)  { .movie video { margin: -70% 0; } }
@@ -205,29 +205,29 @@ h1 a:hover {
 ***************************/
 
 .articles {
-    float: left;
+	float: left;
 }
 
 /* line-up */
 article.line-up img {
-    border: 3px solid #000;
-    padding: .1rem;
-    margin: 1rem;
-    float: left;
+	border: 3px solid #000;
+	padding: .1rem;
+	margin: 1rem;
+	float: left;
 }
 
 article.line-up {
-    border: 3px solid #999;
-    padding-top: 1rem;
-    text-align: left;
-    margin: 1rem;
-    overflow: auto;
-    position: relative;
+	border: 3px solid #999;
+	padding-top: 1rem;
+	text-align: left;
+	margin: 1rem;
+	overflow: auto;
+	position: relative;
 }
 
 article.line-up h1 {
-    width: 68%;
-    padding: 1rem;
+	width: 68%;
+	padding: 1rem;
 }
 
 /* breakpoints for the header, because of the time */
@@ -243,44 +243,44 @@ article.line-up h1 {
 @media all and (max-width: 340px) { article.line-up h1 { width: 13rem; } }*/
 
 article.line-up .time {
-    position: absolute;
-    top: 1rem;
-    right: 0;
-    padding: 1rem;
-    width: 30%;
-    text-align: right;
-    font-weight: bold;
+	position: absolute;
+	top: 1rem;
+	right: 0;
+	padding: 1rem;
+	width: 30%;
+	text-align: right;
+	font-weight: bold;
 }
 @media all and (max-width: 570px) { article.line-up .time { width: 40%; } article.line-up h1 {width: 58%;}}
 @media all and (min-width: 660px) { article.line-up .time { width: 25%; } article.line-up h1 {width: 73%;}}
 
 article.line-up img {
-    width: 21.5rem;
-    height: auto;
+	width: 21.5rem;
+	height: auto;
 }
 
 @media all and (max-width: 440px) {
-    article.line-up img {
-        width: 90%;
-        height: auto;
-    }
+	article.line-up img {
+		width: 90%;
+		height: auto;
+	}
 }
 
 a.button-more {
-    background-color: #999;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.4rem;
-    text-decoration: none;
-    padding: .5rem 2rem;
-    margin: 3rem 1rem;
-    float: right;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+	background-color: #999;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-decoration: none;
+	padding: .5rem 2rem;
+	margin: 3rem 1rem;
+	float: right;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 a.button-more:hover {
-    background-color: #ccc;
+	background-color: #ccc;
 }
 
 /***************************
@@ -288,33 +288,33 @@ a.button-more:hover {
 ***************************/
 
 .main-column {
-    width: 66%;
-    float: left;
+	width: 66%;
+	float: left;
 }
 
 .side-column {
-    width: 33%;
-    float: right;
+	width: 33%;
+	float: right;
 }
 
 @media all and (max-width: 500px) {
-    .side-column {
-        width: 100%;
-        float: left;
-    }
-    .main-column {
-        width: 100%;
-        float: left;
-    }
+	.side-column {
+		width: 100%;
+		float: left;
+	}
+	.main-column {
+		width: 100%;
+		float: left;
+	}
 }
 
 @media all and (max-width: 440px) {
-    a.button-more {
-        float: left;
-    }
-    article.line-up p {
-        float: left;
-    }
+	a.button-more {
+		float: left;
+	}
+	article.line-up p {
+		float: left;
+	}
 }
 
 /***************************
@@ -322,39 +322,39 @@ a.button-more:hover {
 ***************************/
 
 .sidebar {
-    float: right;
-    margin-top: 4rem;
-    width: 33%;
+	float: right;
+	margin-top: 4rem;
+	width: 33%;
 }
 
 article.featured {
-    text-align: left;
-    margin-bottom: 3rem;
-    margin-top: 4rem;
-    position: relative;
+	text-align: left;
+	margin-bottom: 3rem;
+	margin-top: 4rem;
+	position: relative;
 }
 
 /* social icons */
 article.featured ul li {
-    display: inline-block;
-    padding-right: .2rem;
-    padding-left: .2rem;
-    margin-left: .3rem;
-    margin-right: .3rem;
+	display: inline-block;
+	padding-right: .2rem;
+	padding-left: .2rem;
+	margin-left: .3rem;
+	margin-right: .3rem;
 }
 
 .icons::before {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-    padding-right: .3rem;
-    vertical-align: top;
-    font-size: 2rem;
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	padding-right: .3rem;
+	vertical-align: top;
+	font-size: 2rem;
 }
 
 .twitter::before   { content: "\f099"; }
@@ -366,47 +366,47 @@ article.featured ul li {
 
 /* featured text on image */
 .featured img {
-    width: 100%;
+	width: 100%;
 }
 
 .featured .bandname {
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
-    width: 100%;
+	position: absolute;
+	bottom: 2rem;
+	left: 0;
+	width: 100%;
 }
 
 /* name on image  */
 .featured .bandname span {
-    color: white;
-    text-transform: uppercase;
-    font-family: Helvetica, Sans-Serif;
-    font-weight: bold;
-    font-size: 1.6rem;
-    letter-spacing: -1px;
-    background: #000;
-    padding: 1rem;
-    line-height: 3rem;
+	color: white;
+	text-transform: uppercase;
+	font-family: Helvetica, Sans-Serif;
+	font-weight: bold;
+	font-size: 1.6rem;
+	letter-spacing: -1px;
+	background: #000;
+	padding: 1rem;
+	line-height: 3rem;
 }
 
 /* name under image at too small sizes */
 @media all and (max-width: 700px) {
-    .featured img {
-        width: 100%;
-        position: relative;
-        float: left;
-        display: block;
-    }
-    .featured .bandname {
-        position: relative;
-    }
-    .featured .bandname span {
-        display: block;
-        width: 100%;
-        position: relative;
-        text-align: center;
-        float: left;
-    }
+	.featured img {
+		width: 100%;
+		position: relative;
+		float: left;
+		display: block;
+	}
+	.featured .bandname {
+		position: relative;
+	}
+	.featured .bandname span {
+		display: block;
+		width: 100%;
+		position: relative;
+		text-align: center;
+		float: left;
+	}
 }
 
 /***************************
@@ -414,42 +414,42 @@ article.featured ul li {
 ***************************/
 
 .tickets li {
-    display: inline-block;
-    padding: .3rem;
+	display: inline-block;
+	padding: .3rem;
 }
 
 .ticket {
-    display: block;
-    width: 16rem;
-    height: 16rem;
-    position: relative;
+	display: block;
+	width: 16rem;
+	height: 16rem;
+	position: relative;
 }
 
 .ticket::before {
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 16rem;
-    height: 16rem;
-    content: '';
-    /* Image of Barcelona Primavera Sound */
-    /* courtesy haroen.me/s/img           */
-    background-image: url(../img/tickets.png);
-    background-size: 800px 160px;
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 16rem;
+	height: 16rem;
+	content: '';
+	/* Image of Barcelona Primavera Sound */
+	/* courtesy haroen.me/s/img           */
+	background-image: url(../img/tickets.png);
+	background-size: 800px 160px;
 }
 
 .ticket li {
-    font-size: 4rem;
-    color: #FFF;
-    font-weight: bold;
-    -webkit-transition: color .2s ease-in-out;
-    transition: color .2s ease-in-out;
+	font-size: 4rem;
+	color: #FFF;
+	font-weight: bold;
+	-webkit-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
 }
 
 .ticket:hover li {
-    font-weight: bold;
-    color: #000;
+	font-weight: bold;
+	color: #000;
 }
 
 /* image backgrounds */
@@ -461,15 +461,15 @@ article.featured ul li {
 
 /* filters */
 .ticket::before {
-    -webkit-transition: .2s all ease-in-out;
-    transition: .2s all ease-in-out;
-    -webkit-filter: brightness(40%) opacity(100%);
-    filter: brightness(40%) opacity(100%);
+	-webkit-transition: .2s all ease-in-out;
+	transition: .2s all ease-in-out;
+	-webkit-filter: brightness(40%) opacity(100%);
+	filter: brightness(40%) opacity(100%);
 }
 
 .ticket:hover::before {
-    -webkit-filter: brightness(100%) opacity(50%);
-    filter: brightness(100%) opacity(50%);
+	-webkit-filter: brightness(100%) opacity(50%);
+	filter: brightness(100%) opacity(50%);
 }
 
 /***************************
@@ -477,96 +477,96 @@ article.featured ul li {
 ***************************/
 
 .address p {
-    padding: .3rem;
+	padding: .3rem;
 }
 
 /***************************
 * Form
 ***************************/
 .short {
-    max-width: 60rem;
+	max-width: 60rem;
 }
 form {
-    margin: 0 auto;
-    text-align: center;
-    display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
 }
 
 fieldset {
-    border: 0;
-    padding-bottom: 2rem;
-    margin: auto 3rem;
-    border-bottom: 1px solid #000;
-    max-width: 30rem;
-    float: left;
-    margin-bottom: 1rem;
+	border: 0;
+	padding-bottom: 2rem;
+	margin: auto 3rem;
+	border-bottom: 1px solid #000;
+	max-width: 30rem;
+	float: left;
+	margin-bottom: 1rem;
 }
 
 fieldset:last-child {
-    border: none;
+	border: none;
 }
 
 #tot,
 legend {
-    font-weight: bold;
-    font-size: 1.4rem;
-    clear: both;
+	font-weight: bold;
+	font-size: 1.4rem;
+	clear: both;
 }
 
 @media all and (max-width: 575px) {
-    .sum {
-        width: 100%;
-        margin: 0 auto;
-        float: left;
-    }
+	.sum {
+		width: 100%;
+		margin: 0 auto;
+		float: left;
+	}
 
-    fieldset {
-        width: 90%;
-        margin: 2rem 10%;
-    }
+	fieldset {
+		width: 90%;
+		margin: 2rem 10%;
+	}
 
-    form {
-        width: 100%;
-        margin: 0 auto;
-    }
+	form {
+		width: 100%;
+		margin: 0 auto;
+	}
 }
 
 form label {
-    float: left;
-    clear: both;
-    padding: .3rem;
-    margin: 1rem;
+	float: left;
+	clear: both;
+	padding: .3rem;
+	margin: 1rem;
 }
 
 form input {
-    float: right;
-    border: 1px solid #000;
-    padding: .3rem;
-    margin: 1rem;
+	float: right;
+	border: 1px solid #000;
+	padding: .3rem;
+	margin: 1rem;
 }
 
 form input.short {
-    width: 4rem;
+	width: 4rem;
 }
 
 form input.long {
-    width: 10rem;
+	width: 10rem;
 }
 
 .form {
-    background-color: #fff;
-    border: 1px solid #000;
-    padding: .4rem 3rem;
-    /*text-align: center;*/
-    margin: 2rem auto;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    float: right;
+	background-color: #fff;
+	border: 1px solid #000;
+	padding: .4rem 3rem;
+	/*text-align: center;*/
+	margin: 2rem auto;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	float: right;
 }
 
 .form:hover {
-    cursor: pointer;
-    background-color: #ccc;
+	cursor: pointer;
+	background-color: #ccc;
 }
 
 /***************************
@@ -574,12 +574,12 @@ form input.long {
 ***************************/
 
 footer {
-    clear: both;
-    text-align: center;
-    height: 3rem;
-    line-height: 3rem;
-    font-size: 1.1rem;
-    padding-top: 3rem;
+	clear: both;
+	text-align: center;
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 1.1rem;
+	padding-top: 3rem;
 }
 
 /***************************
@@ -588,105 +588,105 @@ footer {
 ***************************/
 
 nav[role="navigation"] {
-    text-align: center;
+	text-align: center;
 }
 
 .cd-pagination {
-    width: 90%;
-    max-width: 768px;
-    margin: 2rem auto 2rem;
-    text-align: center;
+	width: 90%;
+	max-width: 768px;
+	margin: 2rem auto 2rem;
+	text-align: center;
 }
 
 .cd-pagination li {
-    /* hide numbers on small devices */
-    display: none;
-    margin: 0 .2em;
+	/* hide numbers on small devices */
+	display: none;
+	margin: 0 .2em;
 }
 
 .cd-pagination li.button {
-    /* make sure prev next buttons are visible */
-    display: inline-block;
+	/* make sure prev next buttons are visible */
+	display: inline-block;
 }
 
 .cd-pagination a,
 .cd-pagination span {
-    display: inline-block;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    /* use padding and font-size to change buttons size */
-    padding: .6em .8em;
-    font-size: 1.4rem;
+	display: inline-block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* use padding and font-size to change buttons size */
+	padding: .6em .8em;
+	font-size: 1.4rem;
 }
 
 .cd-pagination a {
-    text-decoration: none;
-    border: 3px solid #999;
+	text-decoration: none;
+	border: 3px solid #999;
 }
 
 .cd-pagination a:active {
-    /* click effect */
-    -webkit-transform: scale(.9);
-    -ms-transform: scale(.9);
-    transform: scale(.9);
+	/* click effect */
+	-webkit-transform: scale(.9);
+	-ms-transform: scale(.9);
+	transform: scale(.9);
 }
 
 .cd-pagination .button:first-of-type a::before {
-    content: '\00ab  ';
+	content: '\00ab  ';
 }
 
 .cd-pagination .button:last-of-type a::after {
-    content: ' \00bb';
+	content: ' \00bb';
 }
 
 .cd-pagination .current {
-    /* selected number */
-    background-color: #999;
-    border-color: #999;
-    color: #fff;
-    pointer-events: none;
+	/* selected number */
+	background-color: #999;
+	border-color: #999;
+	color: #fff;
+	pointer-events: none;
 }
 
 @media only screen and (min-width: 535px) {
-    .cd-pagination li {
-        display: inline-block;
-    }
+	.cd-pagination li {
+		display: inline-block;
+	}
 }
 
 @media only screen and (min-width: 1170px) {
-    .cd-pagination {
-        margin: 0 auto ;
-    }
+	.cd-pagination {
+		margin: 0 auto ;
+	}
 }
 
 .cd-pagination.no-space {
-    width: auto;
-    max-width: none;
-    display: inline-block;
-    border: 3px solid #999;
+	width: auto;
+	max-width: none;
+	display: inline-block;
+	border: 3px solid #999;
 }
 
 .cd-pagination.no-space:after {
-    content: "";
-    display: table;
-    clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .cd-pagination.no-space li {
-    margin: 0;
-    float: left;
-    border-right: 1px solid #999;
+	margin: 0;
+	float: left;
+	border-right: 1px solid #999;
 }
 
 .cd-pagination.no-space li:last-of-type {
-    border-right: none;
+	border-right: none;
 }
 
 .cd-pagination.no-space a,
 .cd-pagination.no-space span {
-    float: left;
-    padding: .8em 1em;
-    border: none;
+	float: left;
+	padding: .8em 1em;
+	border: none;
 }
