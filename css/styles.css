@@ -430,6 +430,8 @@ article.featured ul li {
     width: 16rem;
     height: 16rem;
     content: '';
+    /* Image of Barcelona Primavera Sound */
+    /* courtesy haroen.me/s/img           */
     background-image: url(../img/tickets.png);
     background-size: 800px 160px;
 }
