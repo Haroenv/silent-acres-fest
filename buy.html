@@ -94,6 +94,14 @@
         }
         setInterval(write,1000); // do that every second
 
+        // don't allow submission when there are no tickets bought
+        if (document.getElementById('tot').innerHTML.substr(1) == 0) {
+        	var form = document.getElementById('ticket');
+        	form.addEventListener('submit',function (event) {
+        		alert('Kies een aantal tickets om te kopen');
+        	}, false);
+        };
+
         // Safari has broken `required` for forms
         if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
             var form = document.getElementById('ticket');
