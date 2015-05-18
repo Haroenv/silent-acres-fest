@@ -79,7 +79,7 @@
 	</footer>
 	<script>
         // get the filled parameters from the browser (linked in tickets.html)
-        if (window.location.hash.substr(1)) {
+        if (window.location.hash.substr(1).length > 0) {
             var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
             for(var i = 0; i < hashParams.length; i++){
                 var p = hashParams[i].split('=');
