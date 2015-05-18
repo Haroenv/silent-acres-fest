@@ -40,7 +40,7 @@
 	<div class="short wrapper">
 		<h2 class="main">Koop een ticket</h2>
 		<form action="javascript:alert('jammer, er kunnen nog geen tickets gekocht worden')" id="ticket" class="clearfix">
-		<!-- <form action="#" id="ticket" class="clearfix"> -->
+			<!-- <form action="#" id="ticket" class="clearfix"> -->
 			<fieldset class="clearfix">
 				<legend>dagen</legend>
 				<label for="vrijdag">vrijdag: 21/8/2015</label>
@@ -58,46 +58,48 @@
 				<legend>persoonlijke info</legend>
 				<label for="name">naam*</label>
 				<input class="long" type="text" name="name" id="name" placeholder="naam" required>
-                <label for="email">e-mailadres*</label>
-                <input class="long" type="email" name="email" id="email" placeholder="email" required>
-            </fieldset>
-            <p class="sum">Totaal: <span id="tot">€0</span></p>
-            <fieldset>
-            	<input type="submit" name="submit" id="submit" class="form" value="betaal">
-            </fieldset>
-        </form>
-        <!-- <button class="form" form="ticket" type="submit">betaal</button> -->
-    </div>
-    <!-- copyright information -->
-    <footer>
-    	<div class="wrapper">
-    		<h2 class="structural">copyright information</h2>
-    		<p>
-    			© 2015 — Silent Acres v.z.w. — site design: <a target="haroen" href="http://haroen.me">Haroen Viaene</a>
-    		</p>
-    	</div>
-    </footer>
-    <script>
-    	// get the filled parameters from the browser (linked in tickets.html)
-        var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
-        for(var i = 0; i < hashParams.length; i++){
-        	var p = hashParams[i].split('=');
-        	document.getElementById(p[0]).value = decodeURIComponent(p[1]);;
-        }
+				<label for="email">e-mailadres*</label>
+				<input class="long" type="email" name="email" id="email" placeholder="email" required>
+			</fieldset>
+			<p class="sum">Totaal: <span id="tot">€0</span></p>
+			<fieldset>
+				<input type="submit" name="submit" id="submit" class="form" value="betaal">
+			</fieldset>
+		</form>
+		<!-- <button class="form" form="ticket" type="submit">betaal</button> -->
+	</div>
+	<!-- copyright information -->
+	<footer>
+		<div class="wrapper">
+			<h2 class="structural">copyright information</h2>
+			<p>
+				© 2015 — Silent Acres v.z.w. — site design: <a target="haroen" href="http://haroen.me">Haroen Viaene</a>
+			</p>
+		</div>
+	</footer>
+	<script>
+        // get the filled parameters from the browser (linked in tickets.html)
+        if (window.location.hash.substr(1)) {
+            var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
+            for(var i = 0; i < hashParams.length; i++){
+                var p = hashParams[i].split('=');
+                document.getElementById(p[0]).value = decodeURIComponent(p[1]);;
+            }
+        };
 
         // get the price and write it in the `tot` element
         function write () {
-        	var tot = document.getElementById('vrijdag').value*10 + document.getElementById('zaterdag').value*10 + document.getElementById('zondag').value*10 + document.getElementById('combi').value*24 + document.getElementById('camping').value*5;
-        	document.getElementById('tot').innerHTML = '€'+tot
+            var tot = document.getElementById('vrijdag').value*10 + document.getElementById('zaterdag').value*10 + document.getElementById('zondag').value*10 + document.getElementById('combi').value*24 + document.getElementById('camping').value*5;
+            document.getElementById('tot').innerHTML = '€'+tot
         }
         setInterval(write,1000); // do that every second
 
         // Safari has broken `required` for forms
         if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-        	var form = document.getElementById('ticket');
-        	form.noValidate = true;
-        	form.addEventListener('submit', function (event) {
-        		if (!event.target.checkValidity()) {
+            var form = document.getElementById('ticket');
+            form.noValidate = true;
+            form.addEventListener('submit', function (event) {
+                if (!event.target.checkValidity()) {
                     event.preventDefault(); // then you don't want the default action, that would be redundant
                     alert('Niet alle velden zijn correct ingevuld.'); //error both when wrong as no input
                 }
