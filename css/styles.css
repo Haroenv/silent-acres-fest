@@ -422,7 +422,7 @@ article.featured ul li {
 .facebook::before  { content: "\f09a"; }
 .facebook:hover    { color: #3b5998; }
 .twitter:hover     { color: #00aced; }
-.instagram:hover  { color: #517fa4; }
+.instagram:hover   { color: #517fa4; }
 
 /* featured text on image */
 .featured img {
