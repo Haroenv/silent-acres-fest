@@ -65,9 +65,6 @@
                 <input class="long" type="text" name="achternaam" id="achternaam" placeholder="achternaam" required> -->
                 <label for="email">e-mailadres*</label>
                 <input class="long" type="email" name="email" id="email" placeholder="email" required>
-                <!--[if IE]>
-                <input type="submit" name="submit" id=submit class="form">
-                <![endif]-->
             </fieldset>
             <p class="sum">Totaal: <span id="tot">€0</span></p>
             <fieldset>
@@ -86,6 +83,7 @@
     	</div>
     </footer>
     <script>
+    	// get the filled parameters from the browser (linked in tickets.html)
         var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
         for(var i = 0; i < hashParams.length; i++){
         	var p = hashParams[i].split('=');
@@ -99,14 +97,13 @@
         }
         setInterval(write,1000); // do that every second
 
-        // Safari has broken `requred` for forms
-        // this will also detect some other browsers, but meh
+        // Safari has broken `required` for forms
         if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
         	var form = document.getElementById('ticket');
         	form.noValidate = true;
         	form.addEventListener('submit', function (event) {
         		if (!event.target.checkValidity()) {
-                    event.preventDefault(); //then you don't want the default action, that would be redundant
+                    event.preventDefault(); // then you don't want the default action, that would be redundant
                     alert('Niet alle velden zijn correct ingevuld.'); //error both when wrong as no input
                 }
             }, false);
