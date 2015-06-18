@@ -62,8 +62,9 @@
 				<input class="long" type="email" name="email" id="email" placeholder="email" required>
 			</fieldset>
 			<p class="sum">Totaal: <span id="tot">€0</span></p>
-			<fieldset>
-				<input type="submit" name="submit" id="submit" class="form" value="betaal">
+			<fieldset class="clearfix">
+				<p id="error"></p>
+				<input type="submit" name="submit" id="submit" class="form-button" value="betaal">
 			</fieldset>
 		</form>
 		<!-- <button class="form" form="ticket" type="submit">betaal</button> -->
@@ -82,34 +83,31 @@
         if (window.location.hash.substr(1).length > 0) {
             var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
             for(var i = 0; i < hashParams.length; i++){
-                var p = hashParams[i].split('=');
-                document.getElementById(p[0]).value = decodeURIComponent(p[1]);;
+            	var p = hashParams[i].split('=');
+            	document.getElementById(p[0]).value = decodeURIComponent(p[1]);;
             }
         };
 
         // get the price and write it in the `tot` element
         function write () {
-            var tot = document.getElementById('vrijdag').value*10 + document.getElementById('zaterdag').value*10 + document.getElementById('zondag').value*10 + document.getElementById('combi').value*24 + document.getElementById('camping').value*5;
-            document.getElementById('tot').innerHTML = '€'+tot
+        	var tot = document.getElementById('vrijdag').value*10 + document.getElementById('zaterdag').value*10 + document.getElementById('zondag').value*10 + document.getElementById('combi').value*24 + document.getElementById('camping').value*5;
+        	document.getElementById('tot').innerHTML = '€'+tot
         }
         setInterval(write,1000); // do that every second
 
-        // don't allow submission when there are no tickets bought
-        if (document.getElementById('tot').innerHTML.substr(1) == 0) {
-        	var form = document.getElementById('ticket');
-        	form.addEventListener('submit',function (event) {
-        		alert('Kies een aantal tickets om te kopen');
-        	}, false);
-        };
-
         // Safari has broken `required` for forms
         if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-            var form = document.getElementById('ticket');
-            form.noValidate = true;
-            form.addEventListener('submit', function (event) {
-                if (!event.target.checkValidity()) {
+        	var form = document.getElementById('ticket');
+        	form.noValidate = true;
+        	form.addEventListener('submit', function (event) {
+        		// don't allow submission when there are no tickets bought
+        		if (document.getElementById('tot').innerHTML.substr(1) == 0) {
+        			event.preventDefault();
+        			document.getElementById('error').innerHTML = 'Kies een aantal tickets.';
+        		}
+        		else if (!event.target.checkValidity()) {
                     event.preventDefault(); // then you don't want the default action, that would be redundant
-                    alert('Niet alle velden zijn correct ingevuld.'); //error both when wrong as no input
+                    document.getElementById('error').innerHTML = 'Kijk de velden nog eens na.'; //error both when wrong as no input
                 }
             }, false);
         }
