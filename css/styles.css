@@ -613,11 +613,19 @@ form input.long {
 	width: 10rem;
 }
 
+form input:focus:invalid {
+	border: 1px solid #f00;
+}
+
+:required ~ label::after {
+	content: "*";
+	color: #f00;
+}
+
 .form-button {
 	background-color: #fff;
 	border: 1px solid #000;
 	padding: .4rem 3rem;
-	/*text-align: center;*/
 	margin: 2rem auto;
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
